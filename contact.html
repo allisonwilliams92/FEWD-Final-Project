@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 
 	<title>Jim Williams Photography - Contact</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- external CSS link -->
 	<link rel="stylesheet" href="css/reset.css">
@@ -12,6 +13,7 @@
 </head>
 
 <body>
+	 <!-- Heading bar for all pages -->
 	<header class="intro">
 		<div class='hamburger'>&#9776;</div>
 		<a href="index.html">
@@ -20,6 +22,7 @@
 		</a>
 	</header>
 
+	<!-- Navigation menu -->
 	<nav class="navigation">
 		<ul class="mainNav clear">
 			<li class="mainLink galleriesMain">Galleries
@@ -38,27 +41,26 @@
 		</ul>
 	</nav>
 
-	<main class="background">
+	<!-- Contact form -->
+	<main class="mainBackground">
+		<h2 class="contactHeading">Contact</h2>
+		<form>
+			<label> Name
+			<input type="text" class="userInput"  placeholder="Enter Name" name="username"></label>
+			
+			<label> Email
+			<input type="email" class="userInput"  placeholder="Enter Email" name="email"></label>
 
-		<div class="contactBlock">
-			<h2 class='contactHeading'> Contact </h2>
-			<form class="entry">
-				<input class="userInput" autofocus placeholder="Name">
-			</form>	
-			<form class="entry">
-				<input class="userInput" autofocus placeholder="Email">
-			</form>	
-			<form class="entryBig">
-				<textarea class="userInputBig" autofocus placeholder="Message"></textarea>
-			</form>	
-
-			<button class="sendButton">Send</button>
-		</div>
+			<label>Please let me know if you have any questions about my work or are interested in buying a print or a calendar.
+			<textarea class="userInputBig"  placeholder="Message" name="message"></textarea></label>
+			
+			<input type="submit" class="sendButton">
+		</form>
 	
 
 	</main>
 	
-
+	<!-- Script tags -->
 	<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
   	<script type="text/javascript" src="js/index.js"></script>
 </body>
