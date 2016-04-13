@@ -82,10 +82,18 @@ a:hover{
   
 }
 
+.hamburger{
+  float:right;
+  width:20%;
+  margin:10px 10px 0 0;
+  font-size:30px;
+  display:none;
+}
+
 .name{
   font-family: 'Brush Script MT', cursive;
   font-size: 50px;
-  padding: 20px 0px 0px 70px;
+  padding: 10px 0px 0px 70px;
 
 }
 
@@ -93,6 +101,7 @@ a:hover{
   padding: 0 0 20px 150px;
   font-size: 20px;
   font-weight: bold;
+
 }
 
 
@@ -157,9 +166,21 @@ a:hover{
 
 .imageMain{
   display:block;
-  width:60%;
+  width:600px;
   margin:auto;
   
+}
+
+.prevButton{
+  position:absolute;
+  top:200px;
+  left:10%;
+}
+
+.nextButton{
+  position:absolute;
+  top:200px;
+  right:10%;
 }
 
 .mainImages{
@@ -167,6 +188,7 @@ a:hover{
   float:left;
 
 }
+
 
 .contactImage{
   display:block;
@@ -178,6 +200,7 @@ a:hover{
 .galleryImages{
   width:33.3%;
   float:left;
+
 
 }
 
@@ -264,3 +287,81 @@ a:hover{
    color:#666;
 }
 
+  
+
+
+@media screen and (max-width: 992px) and (min-width: 769px){
+
+  .navigation{
+    display: none;
+    width:100%;
+    position:static;
+    text-align: center;
+    padding-top:150px;
+  }
+
+  .mainBackground{
+
+    width:100%;
+
+  }
+  .background{
+    width: 95%;
+    margin:auto;
+  }
+
+  .hamburger{
+    display:inline;
+  } 
+
+
+  
+} 
+
+
+@media screen and (max-width: 768px){
+
+  .navigation{
+    display: none;
+    width:100%;
+    position:static;
+    text-align: center;
+    padding-top:150px;
+  }
+
+   .prevButton{
+    display: none;
+  }
+
+  .nextButton{
+    display: none;
+  }
+   .mainBackground{
+
+    width:100%;
+
+  }
+
+  .background{
+    width: 95%;
+    margin:auto;
+  }
+
+  .imageMain{
+    width:400px;
+  }
+
+    .hamburger{
+    display:inline;
+  } 
+
+  .name{
+    padding-left: 40px;
+  }
+
+  .subname{
+    padding-left: 60px;
+  }
+
+  
+} 
